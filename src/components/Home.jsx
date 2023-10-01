@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 import "./css/home.css";
 
 function Home() {
@@ -21,7 +22,8 @@ function Home() {
       <div className="action-container">
         <h2>Join a Room</h2>
         <Link to="/chat" className="btn">
-          Start Chatting
+        <Button variant="outline-success">Start Chatting</Button>{' '}
+          
         </Link>
       </div>
     </div>
