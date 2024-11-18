@@ -1,0 +1,106 @@
+import React, { useState } from "react";
+
+// Sample menu items
+const menuItems = [
+  {
+    category: "NAAN & ROTI",
+    items: [
+      {
+        id: 1,
+        name: "Atta Tandoori Roti",
+        price: 90,
+        image: "../images/img1.jpg",
+      },
+      {
+        id: 2,
+        name: "Pyaz Mirchi Ki Roti",
+        price: 140,
+        image: "../images/img1.jpg",
+      },
+      { id: 3, name: "Missi Roti", price: 180, image: "../images/img1.jpg" },
+    ],
+  },
+  {
+    category: "LIZZAT~E~BIRYANI",
+    items: [
+      { id: 4, name: "Sada Chawal", price: 320, image: "../images/img1.jpg" },
+      { id: 5, name: "Jeera Pulao", price: 390, image: "../images/img1.jpg" },
+    ],
+  },
+  {
+    category: "RAITA AND SALAD",
+    items: [
+      { id: 6, name: "Raita", price: 380, image: "../images/img1.jpg" },
+      {
+        id: 7,
+        name: "Garden Green Salad",
+        price: 490,
+        image: "../images/img1.jpg",
+      },
+    ],
+  },
+];
+
+function Menu({ addToCart }) {
+  const [selectedCategory, setSelectedCategory] = useState(
+    menuItems[0].category
+  );
+
+  // Get items of the selected category
+  const filteredItems = menuItems.find(
+    (category) => category.category === selectedCategory
+  ).items;
+
+  return (
+    <div className="container mt-4">
+      <h2>Food Menu</h2>
+
+      {/* Category Selection */}
+      <div className="mb-4">
+        <label htmlFor="categorySelect" className="form-label">
+          Select a Category:
+        </label>
+        <select
+          id="categorySelect"
+          className="form-select"
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+        >
+          {menuItems.map((category) => (
+            <option key={category.category} value={category.category}>
+              {category.category}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* Render items of the selected category */}
+      <div className="row">
+        {filteredItems.map((item) => (
+          <div key={item.id} className="col-md-4 mb-4">
+            <div className="card">
+              <img
+                src={item.image}
+                alt={item.name}
+                className="card-img-top"
+                style={{ height: "200px", objectFit: "cover" }}
+              />
+              <div className="card-body">
+                <h5 className="card-title">{item.name}</h5>
+                <p className="card-text">Rs {item.price}</p>
+                <button
+                  className="btn btn-primary"
+                  onClick={() => addToCart(item)} // Call addToCart function
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Menu;

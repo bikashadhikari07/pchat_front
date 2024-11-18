@@ -6,13 +6,16 @@ function Nbar() {
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container fluid>
         <Navbar.Brand as={Link} to="/">
-          Pchat
+          Bawarchi Nepal
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/chat">
-              Chat
+            <Nav.Link as={Link} to="/menu">
+              Menu
+            </Nav.Link>
+            <Nav.Link as={Link} to="/cart">
+              Cart
             </Nav.Link>
             <Nav.Link as={Link} to="/about">
               About

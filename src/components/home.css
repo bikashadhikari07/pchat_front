@@ -1,0 +1,157 @@
+/* home.css */
+
+/* General Styling */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.home-container {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+.imglogo {
+  width: 150px;
+  height: 150px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .btn {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+/* Featured Items Section */
+.featured-items {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.featured-items h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.featured-items .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.featured-items .card:hover {
+  transform: translateY(-5px);
+}
+
+.featured-items .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.featured-items .card-body {
+  text-align: center;
+}
+
+.featured-items .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.featured-items .card-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Our Brands Section */
+.our-brands {
+  padding: 50px 20px;
+  background-color: #fff; /* Optional, for contrast */
+  text-align: center;
+}
+
+.our-brands h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333; /* Optional, for better visibility */
+}
+
+/* Brand Images Styling */
+.brand-image {
+  width: 100%; /* Ensure responsiveness */
+  max-width: 200px; /* Prevent oversized images */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center images */
+  display: block;
+  object-fit: contain; /* Ensure logos fit without cropping */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.brand-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .brand-image {
+    max-width: 150px; /* Smaller logos on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-image {
+    max-width: 120px; /* Further scale down for very small screens */
+  }
+}
