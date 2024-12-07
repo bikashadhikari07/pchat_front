@@ -1,0 +1,89 @@
+/* Scoped Styles for Menu Component */
+.menu-container {
+  margin-top: 4rem;
+}
+
+.menu-container .header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 5px 10px;
+  margin-bottom: 1rem;
+}
+
+.menu-container .header h2,
+.menu-container .header p {
+  margin-bottom: 0;
+}
+
+.menu-container .category-buttons {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.menu-container .category-buttons button {
+  padding: 0.5rem 1rem;
+}
+
+.menu-container .category-buttons .btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.menu-container .category-buttons .btn-outline-primary {
+  background-color: transparent;
+  color: #007bff;
+}
+
+.menu-container .menu-items .card {
+  margin-bottom: 1.5rem;
+}
+
+.menu-container .menu-items .card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-container .menu-items .card-body {
+  padding: 1rem;
+}
+
+.menu-container .menu-items .card-body h5 {
+  margin: 0.5rem 0;
+}
+
+.menu-container .menu-items .card-body .btn {
+  margin-top: 1rem;
+}
+
+.menu-container .go-to-cart-button {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .menu-container .category-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu-container .menu-items .col-md-4 {
+    flex: 0 0 48%; /* Two items per row on mobile */
+    margin-bottom: 1rem;
+  }
+
+  .menu-container .menu-items .col-md-4:nth-child(odd) {
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-container .menu-items .col-md-4 {
+    flex: 0 0 100%; /* One item per row on very small screens */
+    margin-right: 0;
+  }
+}

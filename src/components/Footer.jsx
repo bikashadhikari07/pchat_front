@@ -1,61 +1,64 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import logo from "../images/nobglogo.png";
 
 const Footer = () => {
   return (
     <footer className="bg-dark text-white py-4">
-      <div className="container d-flex justify-content-between align-items-center">
-        {/* Logo on the left */}
-        <div className="footer-logo d-flex align-items-center">
-          <img
-            src={logo}
-            alt="Logo"
-            style={{ height: "50px", marginRight: "10px" }}
-          />
-          <span className="brand-name">Bawarchi</span>
+      <div className="container">
+        <div className="row">
+          {/* Logo Section */}
+          <div className="col-md-3 text-center text-md-start mb-3 mb-md-0">
+            <img src={logo} alt="Logo" className="footer-logo" />
+          </div>
+
+          {/* Our Product Section */}
+          <div className="col-md-3 mb-3 mb-md-0">
+            <h5 className="text-danger">Our Product</h5>
+            <ul className="list-unstyled">
+              <li>Snacks</li>
+              <li>Curry</li>
+              <li>Biryani</li>
+              <li>Tandoori</li>
+              <li>Naan Roti</li>
+            </ul>
+          </div>
+
+          {/* Quick Links Section */}
+          <div className="col-md-3 mb-3 mb-md-0">
+            <h5 className="text-danger">Quick Links</h5>
+            <ul className="list-unstyled">
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Gallery</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          {/* Contact Us Section */}
+          <div className="col-md-3 mb-3 mb-md-0">
+            <h5 className="text-danger">Contact Us</h5>
+            <ul className="list-unstyled">
+              <li>
+                <FaPhoneAlt /> +977 14498970
+              </li>
+              <li>
+                <FaPhoneAlt /> +977 4486347
+              </li>
+              <li>
+                <FaEnvelope /> info@expresseats.com.np
+              </li>
+              <li>
+                <FaMapMarkerAlt /> Mid Baneshwor, Kathmandu, Nepal
+              </li>
+            </ul>
+          </div>
         </div>
 
-        {/* Copyright in the center */}
-        <div className="footer-copyright text-center">
-          <p className="mb-0">&copy; 2024 Bawarchi. All rights reserved.</p>
-        </div>
-
-        {/* Social links on the right */}
-        <div className="social-icons d-flex">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white mx-2"
-          >
-            <FaFacebook size={24} />
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white mx-2"
-          >
-            <FaTwitter size={24} />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white mx-2"
-          >
-            <FaInstagram size={24} />
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white mx-2"
-          >
-            <FaLinkedin size={24} />
-          </a>
+        {/* Footer Bottom Section */}
+        <div className="text-center mt-4">
+          <p className="mb-0">All Rights Reserved By Bawarchi Nepal @2024.</p>
         </div>
       </div>
     </footer>

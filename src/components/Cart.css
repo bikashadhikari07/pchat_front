@@ -1,0 +1,112 @@
+/* Cart.css */
+
+/* Scoped Styles for Cart Page */
+
+/* Wrap cart page in a container to scope the styles */
+.cart-container {
+  padding-top: 60px; /* Padding for spacing */
+}
+
+.cart-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.cart-item-image {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cart-item .card-title {
+  font-size: 18px;
+}
+
+.cart-item .card-text {
+  font-size: 14px;
+}
+
+.cart-item .btn-secondary {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.cart-item .mx-2 {
+  font-size: 16px;
+}
+
+.cart-item .btn-danger {
+  height: auto;
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+/* Order Form Modal */
+.cart-container .modal-dialog {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.cart-container .modal-content {
+  border-radius: 8px;
+}
+
+.cart-container .modal-header {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.cart-container .modal-title {
+  font-size: 20px;
+}
+
+.cart-container .form-label {
+  font-weight: bold;
+}
+
+.cart-container .form-control,
+.cart-container .form-select {
+  font-size: 14px;
+}
+
+.cart-container .modal-footer {
+  padding: 10px;
+}
+
+.cart-container .btn-close {
+  font-size: 20px;
+}
+
+/* Mobile Responsive Styles for Cart */
+@media (max-width: 768px) {
+  .cart-item .btn-danger {
+    font-size: 12px; /* Make font smaller */
+    padding: 5px 10px; /* Reduce padding */
+    width: 100%; /* Make the button full width on smaller screens */
+    min-width: 80px;
+    height: auto; /* Set a smaller minimum width */
+  }
+  .cart-container .cart-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-container .cart-item .card-title,
+  .cart-container .cart-item .card-text {
+    text-align: center;
+  }
+
+  .cart-container .cart-item-image {
+    margin-bottom: 10px;
+  }
+}

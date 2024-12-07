@@ -13,6 +13,7 @@ import Cart from "./components/Cart";
 // CSS
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import OrderOnline from "./components/Orderonline";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -79,6 +80,7 @@ function App() {
         />
         <Route path="account" element={<Account />} />
         <Route path="about" element={<About />} />
+        <Route path="orderonline" element={<OrderOnline />} />
       </Routes>
       <Footer />
     </>

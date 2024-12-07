@@ -1,7 +1,86 @@
+/* General Footer Styling */
 footer {
-  margin-top: auto;
-  background-color: #333;
+  background-color: #111;
   color: #fff;
-  text-align: center;
-  padding: 10px 0;
+}
+
+.footer-logo {
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-danger {
+  color: #ff4500 !important;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 8px;
+}
+
+ul.list-unstyled li svg {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-logo {
+    display: none;
+  }
+
+  /* Text alignment on mobile */
+  .text-center {
+    text-align: center !important;
+  }
+
+  .col-md-3 {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  /* Adjust font size for section titles and list items */
+  .text-danger {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  ul.list-unstyled li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  /* Contact info icons size */
+  ul.list-unstyled li svg {
+    font-size: 16px;
+  }
+
+  /* Footer bottom text */
+  .text-center p {
+    font-size: 14px;
+    margin-bottom: 0;
+    padding: 10px 0;
+  }
+}
+
+/* Extra Small Device (Mobile) Adjustments */
+@media (max-width: 480px) {
+  .footer-logo {
+    display: none; /* Further reduce logo size for very small screens */
+  }
+
+  .col-md-3 {
+    padding: 0 15px;
+  }
+
+  /* Adjusting margins for even smaller screens */
+  .text-danger {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  ul.list-unstyled li {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
 }

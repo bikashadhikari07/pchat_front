@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import "./css/menu.css";
 
 // Sample menu items
 const menuItems = [
@@ -42,21 +44,42 @@ const menuItems = [
 ];
 
 function Menu({ addToCart }) {
+  window.onload = function () {
+    const navbarHeight = document.querySelector(".navbar").offsetHeight;
+    document.body.style.paddingTop = `${navbarHeight}px`;
+  };
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { deliveryType, address } = location.state || {}; // Get deliveryType and address
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  // Filter menu items based on the selected category
+  // Filtered items based on the selected category
   const filteredItems =
     selectedCategory === "All"
       ? menuItems.flatMap((category) => category.items)
       : menuItems.find((category) => category.category === selectedCategory)
-          .items;
+          ?.items || [];
+
+  const goToCart = () => {
+    navigate("/cart", {
+      state: { deliveryType, address }, // Pass deliveryType and address to Cart
+    });
+  };
 
   return (
-    <div className="container mt-4">
-      <h2>Food Menu</h2>
+    <div className="container mt-4 menu-container">
+      <div className="header">
+        <h2 className="mb-0">Food Menu</h2>
+        <p className="mb-0">
+          <strong>Delivery Type:</strong> {deliveryType}
+        </p>
+        <p className="mb-0">
+          <strong>Address:</strong> {address}
+        </p>
+      </div>
 
       {/* Category Buttons */}
-      <div className="mb-4 d-flex justify-content-center gap-3">
+      <div className="category-buttons">
         <button
           className={`btn ${
             selectedCategory === "All" ? "btn-primary" : "btn-outline-primary"
@@ -80,8 +103,8 @@ function Menu({ addToCart }) {
         ))}
       </div>
 
-      {/* Render items of the selected category */}
-      <div className="row">
+      {/* Render Menu Items */}
+      <div className="row menu-items">
         {filteredItems.map((item) => (
           <div key={item.id} className="col-md-4 mb-4">
             <div className="card">
@@ -96,7 +119,7 @@ function Menu({ addToCart }) {
                 <p className="card-text">Rs {item.price}</p>
                 <button
                   className="btn btn-primary"
-                  onClick={() => addToCart(item)} // Call addToCart function
+                  onClick={() => addToCart(item)} // Add item to cart
                 >
                   Add to Cart
                 </button>
@@ -104,6 +127,13 @@ function Menu({ addToCart }) {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Go to Cart Button */}
+      <div className="go-to-cart-button text-center mt-4 mb-10">
+        <button className="btn btn-success" onClick={goToCart}>
+          Go to Cart
+        </button>
       </div>
     </div>
   );

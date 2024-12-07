@@ -1,5 +1,3 @@
-/* home.css */
-
 /* General Styling */
 body,
 html {
@@ -13,50 +11,109 @@ html {
   font-family: Arial, sans-serif;
 }
 
-/* Hero Section */
-.hero-section {
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 100px 0;
-  text-align: center;
+.hero-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Behind the content */
 }
-.imglogo {
-  width: 150px;
-  height: 150px;
+
+.slide {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Hero Section */
+.hero-section::before {
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Centers the content */
+  align-items: center; /* Vertically centers content */
+  justify-content: space-between; /* Space between text and image */
+  padding: 0 5%; /* Adds spacing around the content */
+
+  color: #fff; /* Light text for better contrast */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero-section h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
 }
 
 .hero-description {
   font-size: 1.2rem;
   max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  line-height: 1.5;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  line-height: 1.6;
 }
 
 .hero-section .btn {
-  padding: 10px 20px;
-  font-size: 1.1rem;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
   border-radius: 5px;
+  color: #000;
+  background-color: #ffc107;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  background-color: #ff9f00;
+}
+
+/* Image in Hero Section */
+.hero-section img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-section {
+  position: relative;
+}
+
+.about-us-image-container {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+}
+
+.about-us-image {
+  border-radius: 15px;
+}
+
+.about-us-text p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.know-more-btn {
+  background-color: #ff9800;
+  color: #fff;
+  font-weight: bold;
+  border: none;
 }
 
 /* Featured Items Section */
 .featured-items {
-  padding: 50px 0;
+  padding: 50px 15% 50px;
   background-color: #f8f9fa;
 }
 
 .featured-items h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 40px;
+  font-weight: bold;
 }
 
 .featured-items .card {
@@ -79,6 +136,7 @@ html {
 
 .featured-items .card-body {
   text-align: center;
+  padding: 15px;
 }
 
 .featured-items .card-title {
@@ -93,65 +151,84 @@ html {
   margin-bottom: 15px;
 }
 
-/* About Us Section */
-.about-us {
-  padding: 50px 20px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.about-us h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.about-us p {
+.featured-items .btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
   font-size: 1rem;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #555;
+  transition: background-color 0.3s ease;
+}
+
+.featured-items .btn:hover {
+  background-color: #0056b3;
 }
 
 /* Our Brands Section */
 .our-brands {
-  padding: 50px 20px;
-  background-color: #fff; /* Optional, for contrast */
+  padding: 50px 5%;
+  background-color: #fff;
   text-align: center;
 }
 
 .our-brands h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #333; /* Optional, for better visibility */
+  font-weight: bold;
+  color: #333;
 }
 
-/* Brand Images Styling */
 .brand-image {
-  width: 100%; /* Ensure responsiveness */
-  max-width: 200px; /* Prevent oversized images */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center images */
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
   display: block;
-  object-fit: contain; /* Ensure logos fit without cropping */
+  object-fit: contain;
   transition: transform 0.3s ease-in-out;
 }
 
-/* Hover Effect */
 .brand-image:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
-  .brand-image {
-    max-width: 150px; /* Smaller logos on smaller screens */
+@media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-section img {
+    margin-top: 20px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .featured-items .card-img-top {
+    height: 150px;
+  }
+
   .brand-image {
-    max-width: 120px; /* Further scale down for very small screens */
+    max-width: 150px;
   }
 }

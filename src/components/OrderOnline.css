@@ -1,0 +1,88 @@
+/* Full-screen background with carousel effect */
+.order-online-container {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-image 1s ease-in-out;
+}
+
+/* Card styling */
+.order-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 1.5rem;
+}
+
+/* Delivery type selection */
+.delivery-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.delivery-options label {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.branch-select,
+.delivery-input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* Location icon button */
+.location-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.location-icon {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.location-icon:hover {
+  background-color: #e68900;
+}
+
+/* Order now button */
+.order-now-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-now-button:hover {
+  background-color: #43a047;
+}

@@ -1,0 +1,42 @@
+.transparent-navbar {
+  position: sticky; /* Makes the navbar stick to the top */
+  top: 0; /* Sticks to the top */
+  z-index: 1030; /* Ensures visibility above other elements */
+}
+
+/* General navbar adjustments */
+.navbar {
+  padding: 0.5rem 1rem; /* Reduce padding for smaller devices */
+}
+
+/* Center brand on mobile view */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo adjustments */
+.navbar-logo {
+  width: 30px; /* Scale down logo */
+  height: 30px;
+}
+
+/* Navigation link adjustments */
+.navbar-nav .nav-link {
+  font-size: 14px; /* Smaller font for links */
+  padding: 5px 10px;
+}
+
+/* Hide buttons on small screens */
+@media (max-width: 600px) {
+  .navbar {
+    position: absolute; /* Position navbar absolutely on mobile */
+    top: 0; /* Position it at the top of the parent container */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    width: 100%; /* Make the navbar span the entire width */
+    background-color: #fffefe; /* Set a background color (adjust as needed) */
+    z-index: 1000; /* Ensure the navbar is above other content */
+  }
+}

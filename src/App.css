@@ -4,6 +4,8 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
   font-family: Arial, sans-serif; /* You can change the font family as needed */
 }
 
@@ -11,14 +13,14 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 }
 
 /* Responsive Layout */
 .container {
   width: 100%;
-  max-width: 1200px; /* Keeps the content width within limits on larger screens */
-  margin: 0 auto; /* Centers the content */
-  padding: 20px;
+  min-width: 100vw; /* Keeps the content width within limits on larger screens */
+  /* Centers the content */
 }
 
 /* Ensuring good padding and spacing for the entire app */
@@ -31,8 +33,6 @@ html {
 
 .app-content {
   flex: 1;
-  padding: 20px;
-  background-color: #ffffff;
 }
 
 /* Media Query for Tablet and Mobile Devices */

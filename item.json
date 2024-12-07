@@ -1,0 +1,525 @@
+{
+  "Appetizers": [
+    {
+      "item_name": "Sichuan Potatoes",
+      "description": "Potatoes sautéed in garlic and sichuan peppers.",
+      "price": "Rs 520"
+    },
+    {
+      "item_name": "Tangra Wontons Veg/Non-Veg",
+      "description": "Bite-size dumplings made with veggies & cheese or meat.",
+      "price": "Rs 660"
+    },
+    {
+      "item_name": "Spring Rolls Veg/Non-Veg",
+      "description": "Thin sheet of dough filled with veggies or meat.",
+      "price": "Rs 690"
+    },
+    {
+      "item_name": "Oyster Walnut and Paneer",
+      "description": "Walnut and paneer sautéed with pan Asian condiments.",
+      "price": "Rs 740"
+    },
+    {
+      "item_name": "Wild Wood Ear Mushroom in Chilli",
+      "description": "Gelatinous textured mushroom cooked with Chinese spices.",
+      "price": "Rs 780"
+    },
+    {
+      "item_name": "Tangra Chicken Wings",
+      "description": "Chicken wings the Tangra Chinese way.",
+      "price": "Rs 690"
+    },
+    {
+      "item_name": "Orange Chicken",
+      "description": "Crispy chicken cooked in sweet and spicy orange sauce.",
+      "price": "Rs 690"
+    },
+    {
+      "item_name": "Crispy Fried Fish",
+      "description": "Fish fillets coated with golden batter and deep fried.",
+      "price": "Rs 790"
+    },
+    {
+      "item_name": "Soy Garlic Prawn",
+      "description": "Prawn sautéed in ginger and tossed in secret soy sauce.",
+      "price": "Rs 1180"
+    }
+  ],
+  "Main Course": [
+    {
+      "item_name": "Chinese Steamed or Fried Trout w/ Spicy Sauce",
+      "description": "Rainbow trout served steamed or fried.",
+      "price": "Rs 2440"
+    },
+    {
+      "item_name": "Sweet & Sour Crispy Chicken",
+      "description": "Authentic sweet and sour crispy chicken served with steamed rice.",
+      "price": "Rs 890"
+    },
+    {
+      "item_name": "Manchurian Veg/Non Veg",
+      "description": "Deep fried veggie or meat balls cooked in sweet, spicy and tangy sauce.",
+      "price": "Rs 890"
+    },
+    {
+      "item_name": "Congee Lamb",
+      "description": "Shredded lamb fried and tossed in sweet and sour sauce.",
+      "price": "Rs 1090"
+    },
+    {
+      "item_name": "Soy Ginger Prawn",
+      "description": "Prawns sautéed in ginger and soy sauce.",
+      "price": "Rs 1180"
+    }
+  ],
+  "Choice of Momo": [
+    { "item_name": "Veg", "price": "Rs 360" },
+    { "item_name": "Chicken", "price": "Rs 420" },
+    { "item_name": "Mutton", "price": "Rs 740" },
+    { "item_name": "Prawn", "price": "Rs 1090" }
+  ],
+  "Choice of Chilli": [
+    { "item": "Veg", "price": "Rs 710" },
+    { "item": "Chicken", "price": "Rs 690" },
+    { "item": "Mutton", "price": "Rs 1080" },
+    { "item": "Prawn", "price": "Rs 1190" }
+  ],
+  "Choice of Tangra (Fried Rice & Hakka Noodles)": [
+    { "item_name": "Veg", "price": "Rs 580" },
+    { "item_name": "Chicken", "price": "Rs 680" },
+    { "item_name": "Mutton", "price": "Rs 840" },
+    { "item_name": "Prawn", "price": "Rs 1199" }
+  ],
+  "Dessert": [
+    {
+      "item_name": "Bawarchi Dessert",
+      "description": "Sweet concoction of Bawarchi's finest.",
+      "price": "Rs 799"
+    },
+    {
+      "item_name": "Desserts from the Cellar",
+      "description": "Please refer to our server.",
+      "price": null
+    }
+  ],
+
+  "SAMUNDER KA KHAZANA": [
+    {
+      "item_name": "Kali Mirch Methi Fish Tikka",
+      "description": "Fish tikka with freshly crushed black pepper and dry fenugreek.",
+      "price": "RS 920"
+    },
+    {
+      "item_name": "Angara Amritsari Machhi",
+      "description": "Coated with besan flour and special Bawarchi spices and deep fried.",
+      "price": "RS 990"
+    },
+    {
+      "item_name": "Tandoori Basil Prawn",
+      "description": "Juicy prawns marinated with basil and grilled to perfection.",
+      "price": "RS 1260"
+    },
+    {
+      "item_name": "Prawn Tikka Chatpata",
+      "description": "Prawn tikka marinated in Indian spices and cooked in tandoor oven and tossed in tangy masala.",
+      "price": "RS 1290"
+    },
+    {
+      "item_name": "Tandoori Platter Non-Veg",
+      "description": "Combination of five mouth-watering kebabs.",
+      "price": "RS 2499"
+    }
+  ],
+  "SHARARAT E SABZE": [
+    {
+      "item_name": "Aloo Nazakat",
+      "description": "Scooped potatoes stuffed with sweetcorn and nuts.",
+      "price": "RS 580"
+    },
+    {
+      "item_name": "Bhindi Kurkure",
+      "description": "Crispy fried okra served sprinkled with chaat masala.",
+      "price": "RS 590"
+    },
+    {
+      "item_name": "Tandoori Gobi",
+      "description": "Flavorful and healthy cauliflower baked in tandoor.",
+      "price": "RS 590"
+    },
+    {
+      "item_name": "Bawarchi Fries (Signature)",
+      "description": "Finger cut potatoes doused in special batter and deep-fried.",
+      "price": "RS 599"
+    },
+    {
+      "item_name": "Seekh Kebab",
+      "description": "Seekh done right... The Bawarchi way!",
+      "price": "RS 690"
+    },
+    {
+      "item_name": "Harabhara Kebab",
+      "description": "Chana dal, spinach, green peas & paneer come together for this classic.",
+      "price": "RS 690"
+    },
+    {
+      "item_name": "Paneer Tikka Skewers",
+      "description": "Cottage cheese marinated in pickle and cooked in tandoor oven.",
+      "price": "RS 740"
+    },
+    {
+      "item_name": "Katar Kebab",
+      "description": "Marinated small pieces of jackfruit in yoghurt and Indian spices, cooked in tandoor.",
+      "price": "Rs 690"
+    },
+    {
+      "item_name": "Cheesy Malai Paneer Tikka",
+      "description": "Soft melt-in-the-mouth creamy paneer recipe with cheese.",
+      "price": "Rs 760"
+    },
+    {
+      "item_name": "Soya Chaap",
+      "description": "Grilled soya chunks, marinated with yoghurt, chaat masala, and butter.",
+      "price": "Rs 690"
+    },
+    {
+      "item_name": "Cream Kari Corn Tikki",
+      "description": "Corn with cashew nuts and the flavours alive.",
+      "price": "Rs 720"
+    },
+    {
+      "item_name": "Shabnam K Moti",
+      "description": "Mushroom caps filled with cream cheese and a subtle touch of mascarpone cheese, cooked to a golden hue in tandoor.",
+      "price": "Rs 690"
+    },
+    {
+      "item_name": "Tandoori Platter Veg",
+      "description": "Combination of five mouth-watering kebabs.",
+      "price": "Rs 2299"
+    }
+  ],
+  "MURGH KE PAKWAN": [
+    {
+      "item_name": "Khurcha Saag Murgh",
+      "description": "Shredded chicken tikkas tossed with spinach, fenugreek, colored peppers and peppercorns, tempered with mustard seeds.",
+      "price": "RS 840"
+    },
+    {
+      "item_name": "Kadhai Butter Chicken",
+      "description": "Pakistani dish noted for its spicy taste and use of capsicum.",
+      "price": "RS 840"
+    },
+    {
+      "item_name": "Tariwala Murgh",
+      "description": "Chicken gravy-from a dhaba on the famous Delhi ambala road.",
+      "price": "RS 840"
+    },
+    {
+      "item_name": "Chicken Tikka Masala",
+      "description": "Tandoor oven baked tikkas mixed in tangy masala sauce.",
+      "price": "RS 860"
+    },
+    {
+      "item_name": "Butter Chicken",
+      "description": "Delhi's finest dish. Served true to the core.",
+      "price": "RS 890"
+    },
+    {
+      "item_name": "Chicken Mughlai",
+      "description": "From the imperial mughal courts... combination of chicken cubes in thick yellow gravy.",
+      "price": "RS 1020"
+    }
+  ],
+
+  "NAAN & ROTI": [
+    {
+      "item_name": "Atta Tandoori Roti",
+      "description": "Homemade flatbread made with wheat flour.",
+      "price": "RS 90"
+    },
+    {
+      "item_name": "Pyaz Mirchi Ki Roti",
+      "description": "Traditional roti with a twist of Indian spices.",
+      "price": "RS 140"
+    },
+    {
+      "item_name": "Missi Roti",
+      "description": "Traditional roti with a twist of Indian spices.",
+      "price": "RS 180"
+    },
+    {
+      "item_name": "Roomali Roti",
+      "description": "Flatbread with savory and nutty taste.",
+      "price": "RS 220"
+    },
+    {
+      "item_name": "Naan",
+      "description": "Authentic North Indian naan.",
+      "price": "RS 140"
+    },
+    {
+      "item_name": "Butter Naan",
+      "description": "Naan doused in butter.",
+      "price": "RS 190"
+    },
+    {
+      "item_name": "Garlic Naan",
+      "description": "Naan with the goodness of butter and garlic.",
+      "price": "RS 220"
+    },
+    {
+      "item_name": "Peshawari Naan",
+      "description": "Naan for the Royals.",
+      "price": "RS 220"
+    },
+    {
+      "item_name": "Cheese Naan",
+      "description": "Naan with the umami flavor of cheese.",
+      "price": "RS 280"
+    },
+    {
+      "item_name": "Lachha Paratha",
+      "description": "Traditional South Indian paratha.",
+      "price": "RS 180"
+    },
+    {
+      "item_name": "Mint Paratha",
+      "description": "Crispy and flaky thin layered flatbread topped with mint.",
+      "price": "RS 180"
+    },
+    {
+      "item_name": "Potato Stuffed Kulcha",
+      "description": "Flatbread stuffed with potato and Bawarchi spices.",
+      "price": "RS 240"
+    },
+    {
+      "item_name": "Chicken Mince Stuffed Kulcha",
+      "description": "Flatbread stuffed with chicken mince and Bawarchi spices.",
+      "price": "RS 290"
+    },
+    {
+      "item_name": "Lamb Mince Stuffed Kulcha",
+      "description": "Flatbread stuffed with lamb mince and Bawarchi spices.",
+      "price": "RS 290"
+    }
+  ],
+  "LIZZAT E BIRYANI": [
+    {
+      "item_name": "Sada Chawal",
+      "description": "Fragrant basmati rice.",
+      "price": "RS 320"
+    },
+    {
+      "item_name": "Jeera Pulao",
+      "description": "Slow-cooked steamed rice with jeera and homemade ghee.",
+      "price": "RS 390"
+    },
+    {
+      "item_name": "Matar Pulao",
+      "description": "Slow-cooked steamed rice with green peas and homemade ghee.",
+      "price": "RS 390"
+    },
+    {
+      "item_name": "Katar Biryani",
+      "description": "Spice mix of slow-cooked rice with jackfruit accompanied with raita.",
+      "price": "RS 790"
+    },
+    {
+      "item_name": "Nizam Tarkari Biryani",
+      "description": "Spice mix of slow-cooked rice with veggies accompanied with raita.",
+      "price": "RS 820"
+    },
+    {
+      "item_name": "Dum Biryani Chicken",
+      "description": "Saffron flavored curry cooked with long grain rice in a sealed dish.",
+      "price": "RS 1040"
+    },
+    {
+      "item_name": "Dum Biryani Mutton",
+      "description": "Saffron flavored curry cooked with long grain rice in a sealed dish.",
+      "price": "RS 1280"
+    },
+    {
+      "item_name": "Dum Biryani Prawn",
+      "description": "Saffron flavored curry cooked with long grain rice in a sealed dish.",
+      "price": "RS 1490"
+    },
+    {
+      "item_name": "Hyderabadi Biryani Chicken",
+      "description": "Aromatic Indian curry with long grain basmati rice in a sealed dish.",
+      "price": "RS 1180"
+    },
+    {
+      "item_name": "Hyderabadi Biryani Mutton",
+      "description": "Aromatic Indian curry with long grain basmati rice in a sealed dish.",
+      "price": "RS 1340"
+    }
+  ],
+  "RAITA AND SALAD": [
+    {
+      "item_name": "Raita",
+      "description": "Made with fresh homemade curd, fine cut veggies and spices.",
+      "price": "RS 380"
+    },
+    {
+      "item_name": "Garden Green Salad",
+      "description": "Fresh cut of seasonal veggies topped with spices.",
+      "price": "RS 490"
+    },
+    {
+      "item_name": "Cottage Cheese Salad",
+      "description": "Paneer tikka cube cut mixed with Indian spices.",
+      "price": "RS 720"
+    },
+    {
+      "item_name": "Chicken Tikka Salad",
+      "description": "Chicken tikka cube cut mixed with Indian spices.",
+      "price": "RS 690"
+    }
+  ],
+
+  "Shorba~Soup": [
+    {
+      "item_name": "Dal Palak Shorba",
+      "description": "A flavourful hearty soup made with lentils and spinach.",
+      "price": "RS 460"
+    },
+    {
+      "item_name": "Forest Mushroom Soup Veg/N-Veg",
+      "description": "Super creamy mushroom soup.",
+      "price": "RS 490"
+    },
+    {
+      "item_name": "Tomato Paneer Soup",
+      "description": "Clear tomato soup with paneer.",
+      "price": "RS 460"
+    },
+    {
+      "item_name": "Murgh Yakhni",
+      "description": "A flavourful chicken soup with a twist of Indian spices.",
+      "price": "RS 520"
+    },
+    {
+      "item_name": "Hot and Sour Soup Veg/N-Veg",
+      "description": "Made in China... perfect in BAWARCHI!!",
+      "price": "RS 490"
+    },
+    {
+      "item_name": "Egg Drop Sweetcorn Soup",
+      "description": "Indian style sweetcorn soup.",
+      "price": "RS 520"
+    },
+    {
+      "item_name": "Mutton Bone Rasham",
+      "description": "Luscious, flavourful, tangy and spicy soup made of tender bones and fat cooked with aromatic spices.",
+      "price": "RS 680"
+    },
+    {
+      "item_name": "Seafood Glass Noodle Soup",
+      "description": "Mixed seafood cooked with cellophane noodles.",
+      "price": "RS 680"
+    }
+  ],
+  "Katti Rolls": [
+    { "item_name": "Mixed Vegetables", "description": "", "price": "RS 820" },
+    { "item_name": "Mushroom", "description": "", "price": "RS 940" },
+    { "item_name": "Paneer", "description": "", "price": "RS 980" },
+    { "item_name": "Chicken", "description": "", "price": "RS 960" },
+    { "item_name": "Mutton", "description": "", "price": "RS 1040" },
+    { "item_name": "Fish", "description": "", "price": "RS 990" },
+    { "item_name": "Prawn", "description": "", "price": "RS 1020" }
+  ],
+  "Street Chaat": [
+    {
+      "item_name": "Jalapatra (Pani Puri)",
+      "description": "",
+      "price": "RS 580"
+    },
+    {
+      "item_name": "Delhi to Bombay Bhaji",
+      "description": "",
+      "price": "RS 690"
+    },
+    { "item_name": "Triangle Chaat", "description": "", "price": "RS 790" },
+    { "item_name": "Murgh Chaat", "description": "", "price": "RS 840" }
+  ],
+  "Tandoori Namoone": [
+    {
+      "item_name": "Murgh Malai Cheese",
+      "description": "Chicken tikka with cheese, lemon butter, warming spices and fresh cilantro.",
+      "price": "RS 840"
+    },
+    {
+      "item_name": "Achari Kebab",
+      "description": "Achar = The soul of food mixed in your favourite kebab.",
+      "price": "RS 820"
+    },
+    {
+      "item_name": "Khass Seekh",
+      "description": "Softest seekh kebabs on Moti scale.",
+      "price": "RS 840"
+    },
+    {
+      "item_name": "Kasuri Methi Kebab",
+      "description": "Chicken cubes marinated in flavourable kasuri masala.",
+      "price": "RS 840"
+    },
+    {
+      "item_name": "Reshmi Kabab",
+      "description": "Silver to rev up appetite, subtle and rich chicken kebabs.",
+      "price": "RS 840"
+    },
+    {
+      "item_name": "Lasooni Dhania Murgh",
+      "description": "Garlic partners with cilantro in this exotic chicken tikka, grilled to perfection.",
+      "price": "RS 890"
+    },
+    {
+      "item_name": "Murgh Tikka",
+      "description": "Marinated chicken in yoghurt base Indian spices and cooked in tandoor.",
+      "price": "RS 840"
+    },
+    {
+      "item_name": "Afghani Murgh Tangdi",
+      "description": "Mild flavoured chicken legs with Afghani wash of warming spices, nutmeg and mace.",
+      "price": "RS 960"
+    },
+    {
+      "item_name": "Tandoori Murgh Half",
+      "description": "Indian sub-continent’s finest... with our own twist.",
+      "price": "RS 840"
+    },
+    {
+      "item_name": "Tandoori Chicken Full",
+      "description": "Indian sub-continent’s finest... with our own twist.",
+      "price": "RS 1620"
+    }
+  ],
+  "Laziz~e~Gosht": [
+    {
+      "item_name": "Kebab e Kebab",
+      "description": "Famous... chicken & mutton come together in perfect harmony.",
+      "price": "RS 1040"
+    },
+    {
+      "item_name": "Gosht Boti Kebab",
+      "description": "Mutton marinated in spicy yoghurt.",
+      "price": "RS 1120"
+    },
+    {
+      "item_name": "Galouti Kebab",
+      "description": "King of Kebabs.",
+      "price": "RS 1220"
+    },
+    {
+      "item_name": "Gosht Pudina Seekh",
+      "description": "Perfect kick-start to a fabulous meal—soft mint flavoured mutton seekh kebabs.",
+      "price": "RS 1220"
+    },
+    {
+      "item_name": "Raan Lajawab",
+      "description": "Pot roasted leg of lamb, finished over a charcoal barbeque, basted with garlic and pepper oil.",
+      "price": "RS 3260"
+    }
+  ]
+}
